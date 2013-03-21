@@ -9,6 +9,7 @@
 \usepackage{titlesec}					%custom \section
 \usepackage{datetime}
 \newdateformat{mydate}{\THEDAY~\monthname[\THEMONTH], \THEYEAR}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
 
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
@@ -60,6 +61,17 @@
 %Section: Work Experience at the top
 \section{Work Experience}
 \begin{tabular}{r|p{11cm}}
+\textsc{Feb 2013 - Present} & Freelance Web Developer\\ 
+
+& \footnotesize{ Development of web based database driven applications. Also couple of personal projects on Android mobile platform.
+	\itemize{
+		\item Test Driven development of the module for the integration with a payment system based on CodeIgniter PHP framework and PHPUnit.
+    \item Test Driven development of oAuth client for the Instagram. Used Adroid Java SDK and JUnit.
+
+  }
+ } \\
+
+\multicolumn{2}{c}{} \\
 \textsc{Jun 2011 - Present} & Senior SW Engineer at \href{http://www.instigatedesign.com/}{Instigate CJSC}\\ 
 
 & \footnotesize{ Development of wide range of applications: command line tools,
@@ -114,12 +126,11 @@ and MVC patterns), XHTML, JavaScript, Flash and MySql. Experience in working wit
 &\footnotesize{Development of web based database driven Social networking, CMS
 and E-commerce applications.
 
-	\itemize{
+	\itemize {
 		\item Panda Pro (\href{http://www.pandapro.ru}{http://www.pandapro.ru})
 		\item EIF (\href{http://www.eif-it.com}{http://www.eif-it.com})
 		\item Zahvat (\href{http://www.zahvat.ru}{http://www.zahvat.ru})
-		\item Armenian Deposit Guarantee Fund
-			(\href{http://www.adgf.am}{http://www.adgf.am})
+		\item Armenian Deposit Guarantee Fund (\href{http://www.adgf.am}{http://www.adgf.am})
 	
 	}
 }\\
@@ -168,11 +179,6 @@ and E-commerce applications using famous opensource projects.}
 %Section: Education
 \section{Education}
 \begin{tabular}{rl}
-\textsc{June} 2010 & PhD Student in the field of
-\textsc{Electronics and Microelectronics}, \\ 
-\emph{Present} & 
-\textbf{Russian-Armenian (Slavonic) University}, Yerevan\\ 
-&\\	
 \textsc{June} 2010 & Master of Science in \textsc{Technics and Technology}
  in the field of \textsc{Electronics and} \\ & \textsc{Microelectronics}, 
 \textbf{Russian-Armenian (Slavonic) University}, Yerevan\\ 
