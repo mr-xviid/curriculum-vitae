@@ -5,8 +5,8 @@
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{fullpage}
-\usepackage{supertabular} 				%for Grades
-\usepackage{titlesec}					%custom \section
+\usepackage{supertabular}         %for Grades
+\usepackage{titlesec}         %custom \section
 \usepackage{datetime}
 \newdateformat{mydate}{\THEDAY~\monthname[\THEMONTH], \THEYEAR}
 \usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
@@ -35,237 +35,280 @@
 \textblockorigin{2mm}{0.65\paperheight}
 \setlength{\parindent}{0pt}
 
-%--------------------BEGIN DOCUMENT----------------------
+%--------------------BEGIN DOCUMENT-------------------------------
 \begin{document}
 
 \pagestyle{empty} % non-numbered pages
 
-%--------------------TITLE-------------
+%--------------------TITLE----------------------------------------
 \par{\centering
-		{\Huge Vahe V. \textsc{Evoyan}
-	}\bigskip\par}
+    {\Huge Vahe V. \textsc{Evoyan}
+  }\bigskip\par}
 
-%--------------------SECTIONS-----------------------------------
+%--------------------SECTIONS-------------------------------------
 %Section: Personal Data
 \section{Personal Data}
-
 \begin{tabular}{rl}
     \textsc{Place and Date of Birth:} & Yerevan, Armenia | 10 May 1988 \\
-    \textsc{Address:}   & 23 Komitas, apt. 77, Yerevan 0012, the Republic of Armenia \\
-    \textsc{Home:}      & +374 10 272596\\
-    \textsc{Phone:}     & +374 91 272596\\
-    \textsc{Email:}     &\href{mailto:vahe.evoyan@gmail.com}
-    							{vahe.evoyan@gmail.com}
+    \textsc{Address:}                 & 23 Komitas, apt. 77, Yerevan 0012, the
+                                        Republic of Armenia \\
+    \textsc{Home:}                    & +374 10 272596\\
+    \textsc{Phone:}                   & +374 91 272596\\
+    \textsc{Email:}                   & \href{mailto:vahe.evoyan@gmail.com}
+                                             {vahe.evoyan@gmail.com},
+                                        \href{mailto:vahe@evoyan.org}
+                                             {vahe@evoyan.org}
 \end{tabular}
 
-%Section: Work Experience at the top
+
+%Section: Work Experience
 \section{Work Experience}
 \begin{tabular}{r|p{11cm}}
 
-\textsc{Feb 2013 - Present} & Lead SW Engineer at \href{http://www.instigatedesign.com/}{Instigate CJSC}\\ 
+\textsc{Jan 2015 - Present}
+  & Freelance and Personal Projects \\ 
+  & \footnotesize{ Development of web based database driven applications.
+    \begin{itemize}
+      \item \href{https://github.com/vahe-evoyan/armenian-phonetic/releases}
+        {Phonetic Armenian keyboard layout} for Mac OSX with latest Yosemity
+        support.
+      \item Contributions on \href{https://github.com/InstigateMobile/vostan}
+        {Vostan CRP} to automate the development process via GruntJS, Vagrant
+        and Puppet.
+    \end{itemize}
+  } \\
+
+
+\multicolumn{2}{c}{} \\
+
+
+\textsc{Feb 2013 - Present} 
+  & Lead SW Engineer at 
+    \href{http://www.instigatedesign.com/}{Instigate CJSC} \\ 
 
 & \footnotesize{ Development of wide range of applications: command line tools,
 desktop and web applications, including the DB schema and application
 architecture design. Maintenance and setup of the Linux based server infrastructure.
-	\itemize{
+  \begin{itemize}
     \item Quality tracking internal tool set for EDA specialized company
-      (JavaScript, HTML, Perl, Python, Django, PostgreSQL)
+      (JavaScript, HTML, Perl, Python, Django, PostgreSQL).
     \item Maintenance of the web portal set-up on a set of virtual machines,
       each for a different purpose: Atlassian Confluece documentation, Zendesk
       support integration, Web Portal (BackboneJS, Django), PostgreSQL
       database, LDAP, DNS, FTP, etc.
-
-	}
+  \end{itemize} 
 } \\
 
+
 \multicolumn{2}{c}{} \\
-\textsc{Feb 2013 - Dec 2014} & Freelance and Personal Projects\\ 
+
+
+\textsc{Feb 2013 - Dec 2014} 
+  & Freelance and Personal Projects \\
 
 & \footnotesize{ Development of web based database driven applications. Also couple of personal projects on Android mobile platform.
-	\itemize{
+  \begin{itemize}
     \item Test Driven development of the module for the integration with a
-      payment system based on CodeIgniter PHP framework and PHPUnit.
+          payment system based on CodeIgniter PHP framework and PHPUnit.
     \item Test Driven development of oAuth client for the Instagram. Used
-      Adroid Java SDK and JUnit.
+          Adroid Java SDK and JUnit.
     \item Web based posterminal application for booking a doctor's appointment
-      with sms/call notification. JSON API for mobile application access
-      (Bootstrap, AngularJS, Slim Framework).
+          with sms/call notification. JSON API for mobile application access
+          (Bootstrap, AngularJS, Slim Framework).
     \item Complicated forms for construction company's internal webpage, to
-      construct large and easy modifiable content with high performance
-      (BackboneJS, HTML, CSS, PHP).
+          construct large and easy modifiable content with high performance
+          (BackboneJS, HTML, CSS, PHP).
     \item Online HTML form submission automation for medical institutions
-      (AngularJS, Slim Framework, Propel ORM).
+          (AngularJS, Slim Framework, Propel ORM).
     \item Online booking software for booking an appointment with a doctor in
-      Canada (AngularJS, Slim Framework, Propel ORM).
+          Canada (AngularJS, Slim Framework, Propel ORM).
     \item Armenian Security Conference website
-      (\href{http://www.armsec.org}{armsec.org})
+          (\href{http://www.armsec.org}{armsec.org}).
     \item Samsung Gear application for finding nearby car maintenance places
-      (available for Samsung devices via Gear Manager for Russian market:
-      Автотут).
-
-  }
+          (available for Samsung devices via Gear Manager for Russian market).
+  \end{itemize} 
 } \\
 
+
 \multicolumn{2}{c}{} \\
-\textsc{Jun 2011 - Feb 2013} & Senior SW Engineer at \href{http://www.instigatedesign.com/}{Instigate CJSC}\\ 
+
+
+\textsc{Jun 2011 - Feb 2013} 
+  & Senior SW Engineer at
+    \href{http://www.instigatedesign.com/}{Instigate CJSC} \\
 
 & \footnotesize{ Development of wide range of applications: command line tools,
 desktop and web applications, including the DB schema and application
 architecture design.
-	\itemize{
-		\item School Library Management System (MySQL, ZendFramework, ExtJS)
-    \item Facebook online shop application
+  \begin{itemize}
+    \item School Library Management System (MySQL, ZendFramework, ExtJS).
+    \item Facebook online shop application.
     \item Quality tracking internal tool set for EDA specialized company
-      (JavaScript, HTML, Perl, Python, Django, PostgreSQL)
-
-	}
+          (JavaScript, HTML, Perl, Python, Django, PostgreSQL).
+  \end{itemize} 
 } \\
 
-\multicolumn{2}{c}{} \\
 
-\textsc{Sep 2010 - Jun 2011} & Freelance Web Developer\\ 
 
-& \footnotesize{ Development of web based database driven Social networking, CMS
-and E-commerce applications.
-} \\
+
 \end{tabular}
 
-%\multicolumn{2}{c}{} \\
+% Page 2
 
 \begin{tabular}{r|p{11cm}}
-%\emph{Current} & 
-\textsc{Dec 2008 - Jul 2010} & Web Developer at 
-	\textsc{\href{http://web-emedianet.com/}{Web-Emedianet}}, Yerevan \\ 
-\textsc{Jan 2007 - Jan 2008} % & \emph{}\\
 
-& \footnotesize{ Web Developer in the development of online dating
-systems, using a full range of web technologies including PHP (strict OOP
-and MVC patterns), XHTML, JavaScript, Flash and MySql. Experience in working
-with a very large database setup.
-
-	\itemize{
-		\item eDesirs Dating (\href{http://www.edesirs.com/}
-								{http://www.edesirs.com/})
-		\item ooVisio Dating (\href{http://www.oovisio.com}
-									{http://www.oovisio.com/})
-		\item sexeDesirs Dating (\href{http://www.sexedesirs.com/}
-										{http://www.sexedesirs.com/})
-		\item Dating system administration tool based on ExtJS
-		\item Private chat for dating system based on Adobe Flash 
-		\item Eden Rose Online Store (\href{http://www.edenrose.fr}{http://www.edenrose.fr/})
-	
-	}
+\textsc{Sep 2010 - Jun 2011}
+  & Freelance Web Developer \\
+  & \footnotesize{ Development of web based database driven Social networking,
+    CMS and E-commerce applications.
 } \\
 
-\multicolumn{2}{c}{} \\
- 
-\textsc{Apr 2006 - Jan 2007} & Web Developer at
-	\textsc{\href{http://www.fluger.com}{Fluger}}, Yerevan \\ 
-&\emph{Web Design Studio}\\ 
-&\footnotesize{Development of web based database driven Social networking, CMS
-and E-commerce applications.
+  \multicolumn{2}{c}{} \\
 
-	\itemize {
-		\item Panda Pro (\href{http://www.pandapro.ru}{http://www.pandapro.ru})
-		\item EIF (\href{http://www.eif-it.com}{http://www.eif-it.com})
-		\item Zahvat (\href{http://www.zahvat.ru}{http://www.zahvat.ru})
-		\item Armenian Deposit Guarantee Fund (\href{http://www.adgf.am}{http://www.adgf.am})
-	
-	}
+  \textsc{Dec 2008 - Jul 2010}
+    & Web Developer at 
+      \textsc{\href{http://web-emedianet.com/}{Web-Emedianet}}, Yerevan, AM \\
+  \textsc{Jan 2007 - Jan 2008}
+    & \footnotesize{ Web Developer in the development of online dating
+      systems, using a full range of web technologies including PHP (strict OOP
+      and MVC patterns), XHTML, JavaScript, Flash and MySql. Experience in
+      working with a large database setup.
+  \begin{itemize}
+    \item eDesirs Dating (\href{http://www.edesirs.com/}
+                {http://www.edesirs.com/})
+    \item ooVisio Dating (\href{http://www.oovisio.com}
+                  {http://www.oovisio.com/})
+    \item sexeDesirs Dating (\href{http://www.sexedesirs.com/}
+                    {http://www.sexedesirs.com/})
+    \item Dating system administration tool based on ExtJS
+    \item Private chat for dating system based on Adobe Flash 
+    \item Eden Rose Online Store 
+          (\href{http://www.edenrose.fr}{http://www.edenrose.fr/})
+  \end{itemize} 
+} \\
+
+
+\multicolumn{2}{c}{} \\
+
+
+\textsc{Apr 2006 - Jan 2007} 
+  & Web Developer at \textsc{\href{http://www.fluger.com}{Fluger}},
+    Yerevan, AM \\ 
+  & \emph{Web Design Studio} \\ 
+  & \footnotesize{ Development of web based database driven Social networking,
+    CMS and E-commerce applications.
+    \begin{itemize}
+      \item Panda Pro (\href{http://www.pandapro.ru}{http://www.pandapro.ru})
+      \item EIF (\href{http://www.eif-it.com}{http://www.eif-it.com})
+      \item Zahvat (\href{http://www.zahvat.ru}{http://www.zahvat.ru})
+      \item Armenian Deposit Guarantee Fund
+            (\href{http://www.adgf.am}{http://www.adgf.am})
+    \end{itemize} 
 }\\
 
+
 \multicolumn{2}{c}{} \\
 
-\textsc{June 2005 - May 2006} & Freelance Web Developer at \textsc{Armino},
-								Yerevan \\ 
-&\emph{Web Design Studio}\\
-&\footnotesize{Development of web based database driven Social networking, CMS
-and E-commerce applications using famous opensource projects.}
+
+\textsc{June 2005 - May 2006}
+  & Freelance Web Developer at \textsc{Armino}, Yerevan, AM \\ 
+  & \emph{Web Design Studio}\\
+  & \footnotesize{Development of web based database driven Social networking,
+    CMS and E-commerce applications using famous opensource projects.}
+
 \end{tabular}
 
+
+%Section: General IT Skills
 \section{General IT Skills}
 \begin{itemize}
   \item[] Practice of work with Python and Perl (as a base languages for
-  command line and desktop tools development).
-
-	\item[] PHP 5 Object Oriented Programming. Practice of work with MVC design
-	patterns.
-
-	\item[] Practice of work with SMARTY template system.
-
-	\item[] MySQL 5 with a practice of work with huge databases,i.e. MySQL
-		optimization.
-
-	\item[] JavaScript, frameworks such as jQuery and ExtJS, AngularJS.
-
-	\item[] Standards-Compliant HTML/XHTML and CSS.
-
-	\item[] Experience of working with some open source projects like WordPress,
-		ZendFramework, CodeIgniter, Django.
-
-	\item[] Practice of work with Adobe Flash technologies and
-		ActionScript 3
-
-	\item[] Experience of working with SCMs (CVS, Subversion, Git, Perforce).
-
-  \item[] Advanced MS Windows, Mac and Linux user, with administration skills
-    required for development.
-
-	\item[] Average knowledge in Bash, GNU Make, C++ (STL and Generic
-		Programming), QT Toolkit, POSIX Sockets and Threads API and Java.
+          command line tools development).
+  \item[] PHP 5 Object Oriented Programming. Practice of work with MVC design
+          patterns. Practice of work with SMARTY template system.
+  \item[] PostgreSQL and MySQL relational databases with a practice of work
+          with large databases (approximately $10^10$ rows in the tables).
+  \item[] JavaScript, frameworks and libraries, such as jQuery and ExtJS,
+          AngularJS and BackboneJS. Practice of work with GruntJS and
+          corresponding set of modules.
+  \item[] Standards-Compliant HTML/XHTML and CSS/LESS/SASS. Experience with
+          Bootstrap CSS library.
+  \item[] Experience of working with some open source projects like WordPress,
+          CodeIgniter, Zend Framework, Django.
+  \item[] Experience of working with SCMs (CVS, Subversion, Git, Perforce).
+  \item[] Advanced Mac and Linux user, with administration skills required for
+          development. Experience with Vagrant and Puppet provisioning tool.
+  \item[] Average knowledge in Bash, GNU Make, C++ (STL and Generic
+          Programming), QT Toolkit, POSIX Sockets and Threads API and Java.
 \end{itemize}
+
 
 %Section: Education
 \section{Education}
 \begin{tabular}{rl}
-\textsc{June} 2010 & Master of Science in \textsc{Technics and Technology}
- in the field of \textsc{Electronics and} \\ & \textsc{Microelectronics}, 
-\textbf{Russian-Armenian (Slavonic) University}, Yerevan\\ 
-&\\
-\textsc{June} 2008 & Undergraduate Degree in \textsc{Technics and Technology}
- in the field of \textsc{Electronics} \\ & \textsc{and Microelectronics}, 
-\textbf{Russian-Armenian (Slavonic) University}, Yerevan\\
-&\\
-\textsc{July} 2004& \textbf{School of Physics and Mathematics}, Yerevan
+  \textsc{June} 2010
+    & Master of Science in \textsc{Technics and Technology}
+      in the field of \textsc{Electronics and} \\ & \textsc{Microelectronics}, 
+    \textbf{Russian-Armenian (Slavonic) University}, Yerevan, AM \\
+  & \\
+  \textsc{June} 2008
+    & Undergraduate Degree in \textsc{Technics and Technology}
+      in the field of \textsc{Electronics} \\ & \textsc{and Microelectronics}, 
+    \textbf{Russian-Armenian (Slavonic) University}, Yerevan, AM \\
+  & \\
+  \textsc{July} 2004
+  & \textbf{School of Physics and Mathematics}, Yerevan, AM
 \end{tabular}
 
-%Section: Scholarships and additional info
+
+%Section: Talks and Publications
 \section{Talks and Publications}
 \begin{tabular}{rl}
- \textsc{Dec} 2014 & V.V. Evoyan \\ & \href{http://vahe-evoyan.github.io/pgp-for-dummies/}{PGP For Humans} at Vostan Hackaton and PGP Install Fest, Yerevan, AM. \\
- \textsc{May} 2014 & V.V. Evoyan \\ & \href{http://vahe-evoyan.github.io/nginxssl-presentation/}{Secure SSL setup on Nginx} at ARMSec Alpha 2014 Conference, Yerevan, AM. \\
- \textsc{Jan} 2014 & V.V. Evoyan \\ & \href{https://prezi.com/qpgpm6zuxirv/sqrl}{SQRL: Secure QR code Login} at OWASP January meetup, Yerevan, AM. \\
- \textsc{Dec} 2009 & H.A. Sargsyan, V.V. Evoyan, K.P. Sahakyan \\ & ``Elements
- Of Mathematical Apparatus For Theoretical Physics" \\ & Russian-Armenian
- University Press (in russian).
+  \textsc{Dec} 2014
+    & V.V. Evoyan \\
+    & \href{http://vahe-evoyan.github.io/pgp-for-dummies/}{PGP For Humans}
+      at Vostan Hackaton and PGP Install Fest, Yerevan, AM. \\
+  \textsc{May} 2014
+    & V.V. Evoyan \\ &
+    \href{http://vahe-evoyan.github.io/nginxssl-presentation/}
+         {Secure SSL setup on Nginx} at ARMSec Alpha 2014 Conference,
+         Yerevan, AM. \\
+  \textsc{Jan} 2014
+    & V.V. Evoyan \\
+    & \href{https://prezi.com/qpgpm6zuxirv/sqrl}{SQRL: Secure QR code Login}
+      at OWASP January meetup, Yerevan, AM. \\
+  \textsc{Dec} 2009
+    & H.A. Sargsyan, V.V. Evoyan, K.P. Sahakyan \\
+    & ``Elements Of Mathematical Apparatus For Theoretical Physics" \\
+    & Russian-Armenian University Press (in russian).
 \end{tabular}
+
 
 %Section: Scholarships and additional info
 \section{Profession Development Sessions Attended}
 \begin{tabular}{rl}
-\textsc{Dec} 2010 & \textsc{Instigate CJSC} Training Cources on Software \\
-                  & Development and Electronic System Design on the following topics \\
-\textsc{Oct} 2008 & \textsc{Sun Systems} Training Cources of Java and Web
-					Development \\
-\textsc{June} 2007 & NI LabView Courses in LT-PYRCAL SJSC \\
-\textsc{June} 2005 & ASP VBScript Courses "Khartia JV" Ltd \\
-\textsc{Apr} 2003 & C++ Training Courses
-
+  \textsc{Dec} 2010
+    & \textsc{Instigate CJSC} Training Cources on Software \\
+    & Development and Electronic System Design on the following topics \\
+  \textsc{Oct} 2008
+    & \textsc{Sun Systems} Training Cources of Java and Web Development \\
+  \textsc{June} 2007
+    & NI LabView Courses in LT-PYRCAL SJSC \\
+  \textsc{June} 2005
+    & ASP VBScript Courses "Khartia JV" Ltd \\
+  \textsc{Apr} 2003
+    & C++ Training Courses
 \end{tabular}
 
 
 %Section: Languages
 \section{Languages}
 \begin{tabular}{rl}
- \textsc{Armenian:}&Native\\
- \textsc{Russian, English:}&Fluent\\
+  \textsc{Armenian:}         & Native \\
+  \textsc{Russian, English:} & Fluent \\
 \end{tabular}
 
-\section{Interests and Activities}
-Reading, Photography, Hiking,  \\
-Latin and European Dances, Guitar Playing, Skiing
 
 \vfill
 \hfill \footnotesize{Last Updated: \mydate\today }
 \end{document}
-
