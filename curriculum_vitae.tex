@@ -1,4 +1,4 @@
-% Makefile.latex: pdf 
+% Makefile.latex: pdf
 \documentclass[a4paper,10pt]{article}
 
 \usepackage{marvosym}
@@ -16,7 +16,7 @@
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
-%CV Sections inspired by: 
+%CV Sections inspired by:
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
@@ -57,7 +57,9 @@
     \textsc{Email:}                   & \href{mailto:vahe.evoyan@gmail.com}
                                              {vahe.evoyan@gmail.com},
                                         \href{mailto:vahe@evoyan.org}
-                                             {vahe@evoyan.org}
+                                             {vahe@evoyan.org}\\
+    \textsc{Website:}                 & \href{https://www.evoyan.org}
+                                             {https://www.evoyan.org}
 \end{tabular}
 
 
@@ -65,16 +67,53 @@
 \section{Work Experience}
 \begin{tabular}{r|p{11cm}}
 
+\textsc{Sep 2015 - Present}
+  & Lead SW Engineer at
+    \href{http://www.develandoo.com/}{Develandoo AG} \\
+
+& \footnotesize{ Development of web applications. Maintenance and deployment
+of Docker production services.
+  \begin{itemize}
+    \item Web based analytics application for Linguistic Quality Evaluation
+    for a large company offering translation and localization services
+    (Django, Celery, Selenium and native Django tests, Pandas, MySQL, Docker,
+    jQuery UI, NVD3).
+    \item Web application for marketing company based in Switzerland.
+    Integration with \href{https://instapage.com/}{Instapage} landing page
+    platform (Django, Celery, PostgreSQL, Docker).
+    \item Customizable crawler for fetching different mortgage rates from bank
+    websites. Application provides regular jobs, reports through emails and
+    results available as JSON from a simple REST API (Django, Celery,
+    PostgreSQL, Selenium, PhantomJS Webdriver).
+  \end{itemize}
+} \\
+
+
+\multicolumn{2}{c}{} \\
+
+
+\textsc{Jun 2015 - Present}
+  & Co-Leader at
+    \href{https://www.owasp.org/index.php/Armenia}{OWASP Armenia Chapter} \\
+
+  & \footnotesize{
+    Organizer and participant at OWASP Armenia monthly meetups, as well as
+    first Armenia\textsc{\char13}s premier security conference - ARMSec.
+    Design, implementation and maintenance of the logo and
+    \href{http://armsec.org/}{main website}.
+  } \\
+
+
+\multicolumn{2}{c}{} \\
+
+
 \textsc{Jan 2015 - Present}
-  & Freelance and Personal Projects \\ 
-  & \footnotesize{ Development of web based database driven applications.
+  & Freelance and Personal Projects \\
+  & \footnotesize{
     \begin{itemize}
       \item \href{https://github.com/vahe-evoyan/armenian-phonetic/releases}
-        {Phonetic Armenian keyboard layout} for Mac OSX with latest Yosemity
+        {Phonetic Armenian keyboard layout} for Mac OSX with latest El Capitan
         support.
-      \item Contributions on \href{https://github.com/InstigateMobile/vostan}
-        {Vostan CRP} to automate the development process via GruntJS, Vagrant
-        and Puppet.
     \end{itemize}
   } \\
 
@@ -82,9 +121,52 @@
 \multicolumn{2}{c}{} \\
 
 
-\textsc{Feb 2013 - Present} 
-  & Lead SW Engineer at 
-    \href{http://www.instigatedesign.com/}{Instigate CJSC} \\ 
+\textsc{Jan 2015 - Feb 2016}
+  & Team Lead at
+    \href{http://www.instigatemobile.com/}{Instigate Mobile CJSC} \\
+
+& \footnotesize{ Development of web and mobile applications, security and
+licensing of a server application. Maintenance and setup of secure Linux based
+tiny PCs.
+  \begin{itemize}
+    \item \href{https://github.com/vahe-evoyan/node-hasp/releases}
+      {Node JS HASP addon} for accessing Sentinel HL licensing keys from
+      Node JS application.
+    \item Contributions on \href{https://github.com/InstigateMobile/vostan}
+      {Vostan CRP} to automate the development process via GruntJS, Vagrant
+      and Puppet.
+    \item Other contributions on open source projects:
+      \href{https://github.com/vahe-evoyan/node-lintspaces}{node-lintspaces},
+      \href{https://github.com/InstigateMobileCJSC/rusty}{rusty},
+      \href{https://github.com/InstigateMobileCJSC/scroller}{zynga-scroller}.
+    \item Hybrid mobile application for browsing and scanning digital coupons
+    nearby using GPS coordinates. Available for iOS and Android (Apache
+    Cordova, JQuery Mobile).
+    \item Ripple crypto-currency gateway and trading platform. Integration
+    with PayPal payment system. Rippled gateway setup and maintenance
+    (AngularJS, NodeJS, Express, PostgreSQL, Ripple Node Library, rippled,
+    PayPal NodeJS SDK).
+    \item On-line collaboration portal and marketplace for artists.
+    Application very similar to LinkedIn for musicians, song-writers, graphic
+    designers etc. (Java, JAX-RS, Parse.com, Backbone/MarionetteJS, Docker).
+    \item Space-ship simulation game as a training tool for the development of
+    executives and leading teams. In the Stress Simulator, participants learn
+    how to attain optimal achievement despite time constraints and pressure
+    from responsibilities (NodeJS, Express, Socket.IO, AngularJS, MongoDB, Jenkins Maintenance, Bash, Grunt, Bower, C/C++, NodeJS/V8 Addon SDK, NodeUnit, Sentinel HL HASP SDK, Linux Customization (Debian family), LUKS).
+  \end{itemize}
+} \\
+
+
+\end{tabular}
+
+% Page 2
+
+\begin{tabular}{r|p{11cm}}
+
+
+\textsc{Feb 2013 - Mar 2015}
+  & Lead SW Engineer at
+    \href{http://www.instigatedesign.com/}{Instigate CJSC} \\
 
 & \footnotesize{ Development of wide range of applications: command line tools,
 desktop and web applications, including the DB schema and application
@@ -96,27 +178,25 @@ architecture design. Maintenance and setup of the Linux based server infrastruct
       each for a different purpose: Atlassian Confluece documentation, Zendesk
       support integration, Web Portal (BackboneJS, Django), PostgreSQL
       database, LDAP, DNS, FTP, etc.
-  \end{itemize} 
+  \end{itemize}
 } \\
 
 
 \multicolumn{2}{c}{} \\
 
 
-\textsc{Feb 2013 - Dec 2014} 
+\textsc{Feb 2013 - Dec 2014}
   & Freelance and Personal Projects \\
 
-& \footnotesize{ Development of web based database driven applications. Also couple of personal projects on Android mobile platform.
+& \footnotesize{ Development of web based database driven applications.
   \begin{itemize}
     \item Test Driven development of the module for the integration with a
           payment system based on CodeIgniter PHP framework and PHPUnit.
-    \item Test Driven development of oAuth client for the Instagram. Used
-          Adroid Java SDK and JUnit.
-    \item Web based posterminal application for booking a doctor's appointment
-          with sms/call notification. JSON API for mobile application access
-          (Bootstrap, AngularJS, Slim Framework).
+    \item Web based POS terminal application for booking a doctor's appointment
+          with SMS/call notification. JSON API for mobile application access
+          (Bootstrap CSS, AngularJS, Slim Framework, Twillio API).
     \item Complicated forms for construction company's internal webpage, to
-          construct large and easy modifiable content with high performance
+          build large and easy modifiable content with high performance
           (BackboneJS, HTML, CSS, PHP).
     \item Online HTML form submission automation for medical institutions
           (AngularJS, Slim Framework, Propel ORM).
@@ -126,14 +206,14 @@ architecture design. Maintenance and setup of the Linux based server infrastruct
           (\href{http://www.armsec.org}{armsec.org}).
     \item Samsung Gear application for finding nearby car maintenance places
           (available for Samsung devices via Gear Manager for Russian market).
-  \end{itemize} 
+  \end{itemize}
 } \\
 
 
 \multicolumn{2}{c}{} \\
 
 
-\textsc{Jun 2011 - Feb 2013} 
+\textsc{Jun 2011 - Feb 2013}
   & Senior SW Engineer at
     \href{http://www.instigatedesign.com/}{Instigate CJSC} \\
 
@@ -145,17 +225,12 @@ architecture design.
     \item Facebook online shop application.
     \item Quality tracking internal tool set for EDA specialized company
           (JavaScript, HTML, Perl, Python, Django, PostgreSQL).
-  \end{itemize} 
+  \end{itemize}
 } \\
 
 
+\multicolumn{2}{c}{} \\
 
-
-\end{tabular}
-
-% Page 2
-
-\begin{tabular}{r|p{11cm}}
 
 \textsc{Sep 2010 - Jun 2011}
   & Freelance Web Developer \\
@@ -166,7 +241,7 @@ architecture design.
   \multicolumn{2}{c}{} \\
 
   \textsc{Dec 2008 - Jul 2010}
-    & Web Developer at 
+    & Web Developer at
       \textsc{\href{http://web-emedianet.com/}{Web-Emedianet}}, Yerevan, AM \\
   \textsc{Jan 2007 - Jan 2008}
     & \footnotesize{ Web Developer in the development of online dating
@@ -174,36 +249,30 @@ architecture design.
       and MVC patterns), XHTML, JavaScript, Flash and MySql. Experience in
       working with a large database setup.
   \begin{itemize}
-    \item eDesirs Dating (\href{http://www.edesirs.com/}
-                {http://www.edesirs.com/})
-    \item ooVisio Dating (\href{http://www.oovisio.com}
-                  {http://www.oovisio.com/})
-    \item sexeDesirs Dating (\href{http://www.sexedesirs.com/}
-                    {http://www.sexedesirs.com/})
-    \item Dating system administration tool based on ExtJS
-    \item Private chat for dating system based on Adobe Flash 
-    \item Eden Rose Online Store 
+    \item eDesirs Dating and Dating system administration tool based on ExtJS
+          (\href{http://www.edesirs.com/} {http://www.edesirs.com/})
+    \item Private chat for dating system based on Adobe Flash
+    \item Eden Rose Online Store
           (\href{http://www.edenrose.fr}{http://www.edenrose.fr/})
-  \end{itemize} 
+  \end{itemize}
 } \\
 
 
 \multicolumn{2}{c}{} \\
 
 
-\textsc{Apr 2006 - Jan 2007} 
+\textsc{Apr 2006 - Jan 2007}
   & Web Developer at \textsc{\href{http://www.fluger.com}{Fluger}},
-    Yerevan, AM \\ 
-  & \emph{Web Design Studio} \\ 
+    Yerevan, AM \\
+  & \emph{Web Design Studio} \\
   & \footnotesize{ Development of web based database driven Social networking,
     CMS and E-commerce applications.
     \begin{itemize}
-      \item Panda Pro (\href{http://www.pandapro.ru}{http://www.pandapro.ru})
-      \item EIF (\href{http://www.eif-it.com}{http://www.eif-it.com})
-      \item Zahvat (\href{http://www.zahvat.ru}{http://www.zahvat.ru})
-      \item Armenian Deposit Guarantee Fund
-            (\href{http://www.adgf.am}{http://www.adgf.am})
-    \end{itemize} 
+      \item Panda Pro,
+        EIF (\href{http://www.eif-it.com}{http://www.eif-it.com}),
+        Zahvat (\href{http://www.zahvat.ru}{http://www.zahvat.ru}),
+        Armenian Deposit Guarantee Fund
+    \end{itemize}
 }\\
 
 
@@ -211,7 +280,7 @@ architecture design.
 
 
 \textsc{June 2005 - May 2006}
-  & Freelance Web Developer at \textsc{Armino}, Yerevan, AM \\ 
+  & Freelance Web Developer at \textsc{Armino}, Yerevan, AM \\
   & \emph{Web Design Studio}\\
   & \footnotesize{Development of web based database driven Social networking,
     CMS and E-commerce applications using famous opensource projects.}
@@ -222,24 +291,31 @@ architecture design.
 %Section: General IT Skills
 \section{General IT Skills}
 \begin{itemize}
-  \item[] Practice of work with Python and Perl (as a base languages for
-          command line tools development).
+  \item[] Practice of work with Python, PHP 5 and JavaScript (ES2005) as
+          back-end technologies.
+  \item[] Python and Perl as a base languages for command line tools
+          development.
   \item[] PHP 5 Object Oriented Programming. Practice of work with MVC design
           patterns. Practice of work with SMARTY template system.
   \item[] PostgreSQL and MySQL relational databases with a practice of work
-          with large databases (approximately $10^10$ rows in the tables).
+          with large databases (approximately $10^{10}$ rows in the tables).
+          Average knowledge of MongoDB NoSQL database.
   \item[] JavaScript, frameworks and libraries, such as jQuery and ExtJS,
           AngularJS and BackboneJS. Practice of work with GruntJS and
           corresponding set of modules.
   \item[] Standards-Compliant HTML/XHTML and CSS/LESS/SASS. Experience with
           Bootstrap CSS library.
-  \item[] Experience of working with some open source projects like WordPress,
-          CodeIgniter, Zend Framework, Django.
-  \item[] Experience of working with SCMs (CVS, Subversion, Git, Perforce).
+  \item[] Experience of working with some open source projects such as Django,
+          WordPress, CodeIgniter, Slim Framework, Propel ORM, Zend Framework.
+  \item[] Experience of working with SCMs (CVS, Subversion, Git, Perforce) and
+          on-line repository hosting services (GitHub and Bitbucket) using
+          popular work-flows.
   \item[] Advanced Mac and Linux user, with administration skills required for
-          development. Experience with Vagrant and Puppet provisioning tool.
-  \item[] Average knowledge in Bash, GNU Make, C++ (STL and Generic
-          Programming), QT Toolkit, POSIX Sockets and Threads API and Java.
+          development. Experience with Docker, Vagrant, as well as Puppet and
+          Ansible provisioning tools.
+  \item[] Average knowledge in Bash, GNU Make, NodeJS (Google V8) native
+          add-ons SDK, C/C++ (STL and Generic Programming), QT Toolkit, POSIX
+          Sockets and Threads API, Java.
 \end{itemize}
 
 
@@ -248,12 +324,12 @@ architecture design.
 \begin{tabular}{rl}
   \textsc{June} 2010
     & Master of Science in \textsc{Technics and Technology}
-      in the field of \textsc{Electronics and} \\ & \textsc{Microelectronics}, 
+      in the field of \textsc{Electronics and} \\ & \textsc{Microelectronics},
     \textbf{Russian-Armenian (Slavonic) University}, Yerevan, AM \\
   & \\
   \textsc{June} 2008
     & Undergraduate Degree in \textsc{Technics and Technology}
-      in the field of \textsc{Electronics} \\ & \textsc{and Microelectronics}, 
+      in the field of \textsc{Electronics} \\ & \textsc{and Microelectronics},
     \textbf{Russian-Armenian (Slavonic) University}, Yerevan, AM \\
   & \\
   \textsc{July} 2004
@@ -264,9 +340,13 @@ architecture design.
 %Section: Talks and Publications
 \section{Talks and Publications}
 \begin{tabular}{rl}
+  \textsc{May} 2015
+    & V.V. Evoyan \\
+    & \href{https://evoyan.org/http2-barcamp/}{The new HTTP/2 protocol}
+      at Barcamp EVN 2015, Yerevan, AM. \\
   \textsc{Dec} 2014
     & V.V. Evoyan \\
-    & \href{http://vahe-evoyan.github.io/pgp-for-dummies/}{PGP For Humans}
+    & \href{https://evoyan.org/pgp-for-humans/}{PGP For Humans}
       at Vostan Hackaton and PGP Install Fest, Yerevan, AM. \\
   \textsc{May} 2014
     & V.V. Evoyan \\ &
